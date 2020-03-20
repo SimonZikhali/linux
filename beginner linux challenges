@@ -1,0 +1,242 @@
+TASK 1:
+
+1.After typing ls I see directory.
+this mean that under ls we have directory.
+
+2.pwd show /home/recruit.
+  it mean print working directory.
+
+3.A new directory called workspace show a additional directory cd.
+
+4.ls show a change of cd in the directories.
+
+5.it show the README.md file in the list.
+
+6. I use cp command to copy README.md and renamed it to CHANGELOG.md
+
+TASK 2
+
+    touch exercise.md
+    mv excersise.md /tmp
+    rm /tmp exercise.md
+
+TASK 3
+
+1.used the below commands to create the three files.
+    touch cohort.md
+    touch recruit.md
+    touch umuzi.md
+
+2.I used echo command to write inside each of the three files.
+    echo "hi themby" >> umuzi.md
+    echo "" >> recruit.md
+    echo "" >> cohort.md
+
+3.I used cat command to concatinate all three files and displayed their contants on the screen.
+    cat cohort.md umuzi.md recruit.md
+
+4.Used cat command to write the contants of three files inside a new file called summary.md.
+    cat cohort.md umuzi.md recruit.md >> summary.md
+
+
+5.I used echo command to append text to the end of file summary.md
+    echo "the end" >> summary.md
+
+
+
+TASK 4:
+
+1. Write a script to help you locate a file named umuzi
+   recruit@recruit-Mecer-X102:~/Workspace$ locate umuzi.md
+
+2. Write a second script that will search for the same file and send the result of  he search to a file named search_result.mdrecruit@recruit-Mecer-X102:~/Workspace$ find umuzi.md >      search_result.md
+
+ TASK 5:
+
+1. Create a file within Documents directory, add to is a file named pad.md
+        recruit@recruit-Mecer-X102:~/Documents$ touch pad.md
+
+2. change the working directory to Desktop, then create a folder and name it work
+        recruit@recruit-Mecer-X102:~/Documents$ cd ../
+        recruit@recruit-Mecer-X102:~$ cd Desktop
+        recruit@recruit-Mecer-X102:~/Desktop$ mkdir work
+        
+3. copy pad.md to the currently working directory as pad_copy.md
+        recruit@recruit-Mecer-X102:~/Desktop$ cp ~/Documents/pad.md 
+        pad_copy.md
+
+4. update the database used by locate by running locate updatedb
+        recruit@recruit-Mecer-X102:~/Desktop$ locate updatedb
+        /etc/updatedb.conf
+        /etc/alternatives/updatedb
+        /etc/alternatives/updatedb.8.gz
+        /usr/bin/updatedb
+        /usr/bin/updatedb.mlocate
+        /usr/share/man/man5/updatedb.conf.5.gz
+        /usr/share/man/man8/updatedb.8.gz
+        /usr/share/man/man8/updatedb.mlocate.8.gz
+
+5. Change the working directory to the previous one (cd -)
+        recruit@recruit-Mecer-X102:~/Desktop$ cd -
+        /home/recruit
+
+6. use locate to find pad_copy.md
+        recruit@recruit-Mecer-X102:~$ locate pad_copy.md
+  TASK 6:
+
+1. Write a script to find all files ending with ‘pdf’ on your computer
+        recruit@recruit-Mecer-X102:~$ find . -type f -name "*.pdf"
+        ./Downloads/CV_MahlatseMadi.pdf
+        ./Downloads/OCA_Java_SE_8_Programmer_I_Certification.pdf
+        ./Downloads/certifiedDocs.pdf
+
+2. Write a second command that takes the result of the previous search and copy  into a folder of your choice.
+        recruit@recruit-Mecer-X102:~$ locate .pdf >> umuzi.md
+
+3. Write a command to display files that where modified today.
+        recruit@recruit-Mecer-X102:~$ find . -maxdepth 1 -newermt "2020-01-23"
+            .
+            ./umuzi.md
+            ./.config
+            ./.ICEauthority
+ TASK 7:
+
+1.Using nano text editor create a file named my_bio.md
+        recruit@recruit-Mecer-X102:~$ nano my_bio.md
+        GNU nano 2.9.3          my_bio.md 
+
+2. Save the file and close the editor       
+         Ctrl + O + Ctrl + X 
+
+3. Create a folder named my_files and move my_bio.md within.
+            
+        recruit@recruit-Mecer-X102:~$ mkdir my_files
+        recruit@recruit-Mecer-X102:~$ touch my_bio.md
+        recruit@recruit-Mecer-X102:~$ mv my_bio.md my_files
+
+
+task 8:
+
+1.pdate your system with sudo apt update
+   recruit@recruit-Mecer-X102:~$ sudo apt update
+   [sudo] password for recruit:
+
+2. se the sudo apt upgrade to apply the updates downloaded and select Y for Yes.
+
+ password for recruit:1234567r it give me this:
+
+Get:1 http://archive.canonical.com/ubuntu bionic InRelease [10.2 kB]
+Ign:2 http://dl.google.com/linux/chrome/deb stable InRelease   
+Get:3 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Hit:4 http://archive.ubuntu.com/ubuntu bionic InRelease        
+Ign:5 http://packages.linuxmint.com tina InRelease             
+Get:6 http://dl.google.com/linux/chrome/deb stable Release [943 B]
+Get:7 http://packages.microsoft.com/repos/vscode stable InRelease [3,959 B]
+Get:8 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Get:9 http://archive.canonical.com/ubuntu bionic/partner i386 Packages [2,296 B]
+Get:10 http://packages.linuxmint.com tina Release [24.2 kB]    
+Get:11 http://archive.canonical.com/ubuntu bionic/partner amd64 Packages [2,296 B]
+Get:12 http://archive.canonical.com/ubuntu bionic/partner Translation-en [1,332 B]
+Get:13 http://packages.microsoft.com/repos/vscode stable/main amd64 Packages [167 kB]
+Get:14 http://dl.google.com/linux/chrome/deb stable Release.gpg [819 B]
+Get:15 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Get:16 http://packages.linuxmint.com tina Release.gpg [819 B]  
+Get:17 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [666 kB]
+Get:18 http://archive.ubuntu.com/ubuntu bionic-updates/main i386 Packages [657 kB]
+Get:19 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,139 B]
+Get:20 http://packages.linuxmint.com tina/main i386 Packages [13.7 kB]
+Get:21 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [887 kB]
+Get:22 http://packages.linuxmint.com tina/main amd64 Packages [14.3 kB]
+Get:23 http://packages.linuxmint.com tina/upstream amd64 Packages [36.6 kB]
+Get:24 http://security.ubuntu.com/ubuntu bionic-security/main i386 Packages [448 kB]
+Get:25 http://archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [307 kB]
+Get:26 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [307 kB]
+Get:27 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [215 kB]
+Get:28 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [35.7 kB]
+Get:29 http://archive.ubuntu.com/ubuntu bionic-updates/restricted i386 Packages [9,568 B]
+Get:30 http://archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [9,116 B]
+Get:31 http://archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages [1,011 kB]
+Get:32 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1,058 kB]
+Get:33 http://security.ubuntu.com/ubuntu bionic-security/main amd64 DEP-11 Metadata [38.5 kB]
+Get:34 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [26.6 kB]
+Get:35 http://security.ubuntu.com/ubuntu bionic-security/restricted i386 Packages [4,280 B]
+Get:36 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [7,168 B]
+Get:37 http://security.ubuntu.com/ubuntu bionic-security/universe i386 Packages [617 kB]
+Get:38 http://archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [327 kB]
+Get:39 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 DEP-11 Metadata [265 kB]
+Get:40 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse i386 Packages [7,480 B]
+Get:41 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [10.3 kB]
+Get:42 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [4,664 B]
+Get:43 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 DEP-11 Metadata [2,468 B]
+Get:44 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [4,028 B]
+Get:45 http://archive.ubuntu.com/ubuntu bionic-backports/universe i386 Packages [4,020 B]
+Get:46 http://archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [1,900 B]
+Get:47 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [651 kB]
+Get:48 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [216 kB]
+Get:49 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 DEP-11 Metadata [42.1 kB]
+Get:50 http://security.ubuntu.com/ubuntu bionic-security/multiverse i386 Packages [4,288 B]
+Get:51 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [6,968 B]
+Get:52 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 DEP-11 Metadata [7,984 B]
+Get:53 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [2,732 B]
+Get:54 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 DEP-11 Metadata [2,464 B]
+Get:55 http://packages.linuxmint.com tina/upstream i386 Packages [36.6 kB]
+Get:56 http://packages.linuxmint.com tina/import i386 Packages [6,989 B]
+Get:57 http://packages.linuxmint.com tina/import amd64 Packages [8,203 B]
+Get:58 http://packages.linuxmint.com tina/backport amd64 Packages [53.8 kB]
+Get:59 http://packages.linuxmint.com tina/backport i386 Packages [53.7 kB]
+Fetched 8,556 kB in 6s (1,326 kB/s)                            
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+397 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+3. hen installing a package you use sudo apt install package_name.
+
+recruit@recruit-Mecer-X102:~$ sudo apt install
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+0 upgraded, 0 newly installed, 0 to remove and 397         not upgraded.
+
+4.stall a specific package called tree; using sudo apt install tree
+
+what is sudo?
+
+sudo allows you to run programs with the security privileges of anotheruser.
+
+it is also referred to as a superuser.
+
+it is after used to install,start and stop applications that require root priviledges.
+
+recruit@recruit-Mecer-X102:~$ sudo apt install
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+0 upgraded, 0 newly installed, 0 to remove and 397 not upgraded.
+
+5.recruit@recruit-Mecer-X102:~$ ls
+cd            Downloads    Public       Videos
+CHANGELOG.md  exersice.md  README.md    workspace
+cohort.md     Music        recruits.md  workspase
+Cohort.md     my_files     simo
+Desktop       mymy_bio.md  Templates
+Documents     Pictures     Umuzi.md
+recruit@recruit-Mecer-X102:~$ cd Downloads
+recruit@recruit-Mecer-X102:~/Downloads$ sudo dpkg -i
+[sudo] password for recruit:         
+dpkg: error: --install needs at least one package archive file argument
+
+Type dpkg --help for help about installing and deinstalling packages [*];
+Use 'apt' or 'aptitude' for user-friendly package management;
+Type dpkg -Dhelp for a list of dpkg debug flag values;
+Type dpkg --force-help for a list of forcing options;
+Type dpkg-deb --help for help about manipulating *.deb files;
+
+Options marked [*] produce a lot of output - pipe it through 'less' or 'more' !
+recruit@recruit-Mecer-X102:~/Downloads$ sudo dpkg -i code_1.43.1-1584515895_amd64 (1).deb
+bash: syntax error near unexpected token `('
+recruit@recruit-Mecer-X102:~/Downloads$ sudo dpkg -i code_1.43.1-1584515895_amd64 (1).deb
+
+
+
+
